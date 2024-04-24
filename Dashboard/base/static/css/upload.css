@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    font-family: 'Secular One', sans-serif; 
+    letter-spacing: 1.5px;
+}
+
+.dropzone-box {    
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 1rem;
+    border-radius: 0.8rem;
+    max-width: 40rem;
+    width: 100%;
+    background: #fff;
+}
+
+.dropzone-box h2 {
+    font-size: 1.4rem;
+    margin-bottom: 0.6rem;
+    margin: 0.6rem 1.2rem;
+}
+
+.dropzone-box p{
+    font-size: 1.15rem;
+    margin: 0.6rem 1.2rem;
+}
+
+.dropzone-area {
+    padding: 1rem;
+    position: relative;
+    margin: 1.2rem;
+    min-height: 10rem;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 2px dashed #000;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.dropzone-area [type="file"] {
+    cursor: pointer;
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.dropzone-area .file-upload-icon svg {
+    height: 6rem;
+    max-width: 6rem;
+    width: 100%;
+    margin-bottom: 0.5rem;
+    stroke: #000;
+}
+
+.dropzone-area:hover {
+    background: lightgray;
+}
+
+.dropzone--over {
+    border: 2px solid #8800ff;
+    background: #262626;
+}
+
+.dropzone-actions {
+    display: flex;
+    justify-content: space-between;
+    margin: 1.2rem;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.dropzone-actions button {
+    flex-grow: 1;
+    font-family: 'Secular One', sans-serif;
+    min-height: 3rem;
+    font-size: 1.2rem;
+    border: none;
+    transition: background 0.3s ease;
+}
+
+.dropzone-actions button[type='reset'] {
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    color: white;
+    background: #262620;
+    cursor: pointer;
+    border: lpx solid #333333;
+}
+
+.dropzone-actions button[type='reset']:hover {
+    opacity: 0.8;
+}
+
+.dropzone-actions button[type='submit'] {
+    background: #8800ff;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.dropzone-actions button[type='submit']:hover {
+    opacity: 0.8;
+}
+
+.upload-container {
+    margin: 50px auto;
+    text-align: center;
+}
+
+#select-model {
+    color: white;
+}
+
+#loader {
+    border: 8px solid #f3f3f3; 
+    border-top: 8px solid #3498db; 
+    border-radius: 50%;
+    width: 50px; 
+    height: 50px; 
+    animation: spin 1s linear infinite;
+    position: absolute; 
+    top: 35%; 
+    left: 45%; 
+    transform: translate(-50%, -50%); 
+    z-index: 1000;
+}
+  
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity here */
+    z-index: 999;
+}
+
+.loading-overlay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+  
+@keyframes spin {
+    0% { transform: rotate(0deg); } 
+    100% { transform: rotate(360deg); } 
+}
+    
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    background: linear-gradient(135deg,#38419D, #3887BE, #52D3D8 ); 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    position: relative; 
+}
+
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    animation: fadeInLeft 1s ease; 
+    margin-left: 50px;
+}
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.logo-container img {
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+    border-radius: 10px; 
+}
+
+.logo-container span {
+    font-weight: bold;
+    font-size: 24px; 
+    color: #fff; 
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    animation: fadeInRight 1s ease; 
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+nav ul {
+    margin-right: 20px;
+}
+
+nav li {
+    display: inline-block;
+    background-color: transparent; 
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-right: 10px; 
+    animation: fadeIn 1s ease; 
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff; 
+    font-weight: bold; 
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #050505; 
+}
+
+
+.container {
+    margin: 0 auto;
+    margin-top: 50px;
+    width: 640px;
+    padding: 20px;
+    border-radius: 1rem;
+    background-color: #3887BE;
+}
+
+.main-head h2 {
+    margin: 5px 0px;
+}
+
+.model-select {
+    width: 100%; 
+    display: flex;
+    justify-content: space-around;
+}
+
+.radio-button-label {
+    display: inline-block;
+    padding: 10px 10px;
+    margin: 5px;
+    background-color: #4CAF50;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.radio-button-input {
+    display: none;
+}
+
+.radio-button-input:checked + .radio-button-label {
+    background-color: #1f6d20;
+}
+
+.link-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.link-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #52b45f;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 20px;
+    margin-inline: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+
+}
+
+.link-button:hover {
+    background-color: #3a8e3f;
+    transform: translateY(-2px);
+}

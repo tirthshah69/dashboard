@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Secular One', sans-serif; 
+    letter-spacing: 1.5px;
+    overflow: hidden;
+}
+    
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    background: linear-gradient(135deg,#38419D, #3887BE, #52D3D8 ); 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    position: relative; 
+}
+
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    animation: fadeInLeft 1s ease; 
+    margin-left: 50px;
+}
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.logo-container img {
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+    border-radius: 10px; 
+}
+
+.logo-container span {
+    font-weight: bold;
+    font-size: 24px; 
+    color: #fff; 
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    animation: fadeInRight 1s ease; 
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+nav ul {
+    margin-right: 20px;
+}
+
+nav li {
+    display: inline-block;
+    background-color: transparent; 
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-right: 10px; 
+    animation: fadeIn 1s ease; 
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff; 
+    font-weight: bold; 
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #050505; 
+}
+
+
+h2 {
+    text-align: center;
+    margin-top: 30px;
+    color: #333;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+.table-container {
+    height: 600px;
+    overflow-y: auto;
+}
+
+table {
+    border-collapse: collapse;
+    width: 90%;
+    margin: 20px auto;
+    background-color: #fff;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+thead {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: #fff;
+}
+
+thead th, td {
+    border: 1px solid black;
+}
+
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    border: 1px solid #000000;
+    transition: background-color 0.3s;
+}
+
+th:first-child, td:first-child {
+    padding-left: 20px;
+}
+
+th:last-child, td:last-child {
+    padding-right: 20px;
+}
+
+th {
+    background-color: #00797bb6;
+    color: #fff;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #ddd;
+}
+
+.delete-button {
+    display: inline-block;
+    background-color: #52b45f;
+    padding: 8px 16px;
+    color: #fff;
+    font-family: 'Secular One', sans-serif;
+    font-size: small;
+    text-decoration: none;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.delete-button:hover {
+    background-color: red;
+    transform: translateY(-2px);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}

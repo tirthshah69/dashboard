@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: 'Secular One', sans-serif; 
+    letter-spacing: 1.5px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    background: linear-gradient(135deg,#38419D, #3887BE, #52D3D8 ); 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    position: relative; 
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    animation: fadeInLeft 1s ease; 
+    margin-left: 50px;
+}
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.logo-container img {
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+    border-radius: 50%; 
+}
+
+.logo-container span {
+    font-weight: bold;
+    font-size: 24px; 
+    color: #fff; 
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    animation: fadeInRight 1s ease; 
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+nav ul {
+    margin-right: 20px;
+}
+
+nav li {
+    display: inline-block;
+    background-color: transparent; 
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-right: 10px; 
+    animation: fadeIn 1s ease; 
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff; 
+    font-weight: bold; 
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #050505; 
+}
+
+
+.content-container {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    width: 50%;
+    padding: 30px;
+    border: 2px solid #ccc;
+    border-radius: 16px;
+    background-color: #3887BE;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    text-align: center; 
+    animation: fadeInUp 1s ease; 
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.my-heading {
+    font-size: 2em; 
+    color: #fff; 
+}
+
+.my-div {
+    font-size: 1.1em; 
+    color: #fff; 
+    margin-top: 20px;
+}
+
+.link-button {
+    display: inline-block;
+    padding: 15px 30px; 
+    background-color: #52b45f; 
+    color: #fff; 
+    text-decoration: none; 
+    border: none; 
+    border-radius: 20px;
+    margin-inline: 15px;
+    cursor: pointer; 
+    transition: background-color 0.3s, transform 0.3s; 
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1); 
+
+}
+
+.link-button:hover {
+    background-color: #3a8e3f; 
+    transform: translateY(-2px);
+}

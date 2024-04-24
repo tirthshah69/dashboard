@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+
+    body {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        font-family: 'Secular One', sans-serif;
+        margin: 0;
+        padding: 0; 
+        background: rgb(194, 211, 218);
+    }
+
+    .my-div {
+        background: rgba(254, 254, 255);
+        box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.6);
+        display: inline-block;
+        padding: 50px 90px;
+        margin-bottom: 20px;
+        border-radius: 30px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    table {
+        width: 100%;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 12px;
+        font-size: 16px;
+        color: #000;
+        letter-spacing: 1.5px;
+    }
+
+    .input-field {
+        position: relative;
+
+        background: rgba(254, 254, 255);
+    }
+
+
+    input[type="text"] {
+        width: 100%;
+        padding: 12px 20px;
+        border: 3px solid #000;
+        border-radius: 10px;
+        box-sizing: border-box;
+        margin-bottom: 20px;
+    }
+
+    .input-field input[type="text"] {
+        width: 100%;
+        padding: 12px 20px;
+        border: 3px solid #000;
+        font-family: 'Secular One', sans-serif;
+        font-size: medium;
+        border-radius: 10px;
+        box-sizing: border-box;
+        margin-bottom: 20px;
+        padding-left: 45px;
+        background-image: url('/static/images/userIcon.png');
+        background-repeat: no-repeat;
+        background-position: 10px center;
+        background-size: 20px 20px;
+    }
+
+    .input-field input[type="password"] {
+        width: 100%;
+        padding: 12px 20px;
+        border: 3px solid #000;
+        font-family: 'Secular One', sans-serif;
+        font-size: medium;
+        border-radius: 10px;
+        box-sizing: border-box;
+        margin-bottom: 20px;
+        padding-left: 45px;
+        background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="20" viewBox="-64 0 512 512" height="20"><path d="m336 512h-288c-26.453125 0-48-21.523438-48-48v-224c0-26.476562 21.546875-48 48-48h288c26.453125 0 48 21.523438 48 48v224c0 26.476562-21.546875 48-48 48zm-288-288c-8.8125 0-16 7.167969-16 16v224c0 8.832031 7.1875 16 16 16h288c8.8125 0 16-7.167969 16-16v-224c0-8.832031-7.1875-16-16-16zm0 0"></path><path d="m304 224c-8.832031 0-16-7.167969-16-16v-80c0-52.929688-43.070312-96-96-96s-96 43.070312-96 96v80c0 8.832031-7.167969 16-16 16s-16-7.167969-16-16v-80c0-70.59375 57.40625-128 128-128s128 57.40625 128 128v80c0 8.832031-7.167969 16-16 16zm0 0"></path></svg>');
+        background-repeat: no-repeat;
+        background-position: 10px center;
+        background-size: 20px 20px;
+    }
+
+    .input-field input[type="password"] {
+        width: 100%;
+        padding: 12px 20px;
+        border: 3px solid #000;
+        border-radius: 10px;
+        box-sizing: border-box;
+        margin-bottom: 20px;
+        padding-left: 45px;
+        background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="20" viewBox="-64 0 512 512" height="20"><path d="m336 512h-288c-26.453125 0-48-21.523438-48-48v-224c0-26.476562 21.546875-48 48-48h288c26.453125 0 48 21.523438 48 48v224c0 26.476562-21.546875 48-48 48zm-288-288c-8.8125 0-16 7.167969-16 16v224c0 8.832031 7.1875 16 16 16h288c8.8125 0 16-7.167969 16-16v-224c0-8.832031-7.1875-16-16-16zm0 0"></path><path d="m304 224c-8.832031 0-16-7.167969-16-16v-80c0-52.929688-43.070312-96-96-96s-96 43.070312-96 96v80c0 8.832031-7.167969 16-16 16s-16-7.167969-16-16v-80c0-70.59375 57.40625-128 128-128s128 57.40625 128 128v80c0 8.832031-7.167969 16-16 16zm0 0"></path></svg>');
+        background-repeat: no-repeat;
+        background-position: 10px center;
+        background-size: 20px 20px;
+    }
+
+    button {
+        display: inline-block;
+        padding: 15px 40px;
+        background-color: #52b45f;
+        margin-top: 20px;
+        color: #fff;
+        font-family: 'Secular One', sans-serif;
+        font-size: large;
+        text-decoration: none;
+        border: none;
+        border-radius: 20px;
+        margin-inline: 15px;
+        cursor: pointer;
+        transition: background-color 0.3s, transform 0.3s;
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    button:hover {
+        background-color: #3a8e3f;
+        transform: translateY(-2px);
+    }

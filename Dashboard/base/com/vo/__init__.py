@@ -1,1 +1,0 @@
-from base.com.vo import detection_vo

@@ -1,1 +1,0 @@
-from base.com.service_layer import detection_service

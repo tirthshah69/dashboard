@@ -1,1 +1,0 @@
-from base.com.controller import detection_controller
